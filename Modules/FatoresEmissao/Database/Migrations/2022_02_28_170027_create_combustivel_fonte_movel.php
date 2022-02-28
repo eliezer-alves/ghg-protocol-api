@@ -15,13 +15,13 @@ class CreateCombustivelFonteMovel extends Migration
     {
         Schema::create('combustivel_fonte_movel', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('tipo_combustivel_id')
-                ->constrained('tipo_combustivel');
             $table->string('combustivel');
             $table->string('unidade');
             $table->float('poder_calorifico_inferior', 6,3);
             $table->float('densidade', 6,3);
             $table->string('referencia');
+            $table->foreignId('tipo_combustivel_id')
+                ->constrained('tipo_combustivel');
 
             $table->timestamps();
         });

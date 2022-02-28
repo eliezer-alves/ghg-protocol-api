@@ -27,6 +27,6 @@ class CreateTipoCombustivel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipo_combustivel_fonte_movel');
+        Schema::dropIfExists('tipo_combustivel');
     }
 }

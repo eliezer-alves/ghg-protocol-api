@@ -4,7 +4,6 @@ namespace Modules\FatoresEmissao\Database\Seeders;
 
 use Modules\FatoresEmissao\Models\TipoCombustivel;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
 
 class TipoCombustivelSeeder extends Seeder
 {
