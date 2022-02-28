@@ -1,0 +1,13 @@
+{
+    "name": "FatoresEmissao",
+    "alias": "fatoresemissao",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FatoresEmissao\\Providers\\FatoresEmissaoServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
