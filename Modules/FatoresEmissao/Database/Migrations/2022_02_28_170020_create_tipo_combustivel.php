@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTipoCombustivelFontesMoveis extends Migration
+class CreateTipoCombustivel extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTipoCombustivelFontesMoveis extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_combustivel_fontes_moveis', function (Blueprint $table) {
+        Schema::create('tipo_combustivel', function (Blueprint $table) {
             $table->id();
             $table->string('descricao');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateTipoCombustivelFontesMoveis extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('');
+        Schema::dropIfExists('tipo_combustivel_fonte_movel');
     }
 }

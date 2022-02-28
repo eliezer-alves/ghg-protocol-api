@@ -16,6 +16,6 @@ class FatoresEmissaoDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $this->call(TipoCombustivelSeeder::class);
     }
 }
